@@ -14,13 +14,14 @@ button = st.button("calculate")
 
 if button:
     if choice == "Add":
-         result = fnum + snum
+         r = fnum + snum
     if choice == "Subtract":
-        result = fnum - snum
+        r = fnum - snum
     if choice == "Multiply":
-         result = fnum*snum
+         r = fnum*snum
     if choice == "Divide":
-         result= fnum/snum
-    st.success(f'Result is {result}') 
+         r = fnum/snum
+
+st.warning(f"The result is {r}")
     
 
